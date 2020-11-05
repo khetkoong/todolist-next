@@ -26,7 +26,7 @@ const index = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <input name="todo" ref={register({ required: true })} />{" "}
         <input type="submit" />{" "}
-        <button onClick={() => setValues([])}>reset</button>
+        <button type="button" onClick={() => setValues([])}>reset</button>
       </form>
       {errors.todo && "กรอก something *"}
       <br />
